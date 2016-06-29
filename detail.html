@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>海岛俱乐部</title>
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, maximum-scale=1, 
+    minimum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../style/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../style/swiper/swiper-3.3.1.min.css">
+    <style type="text/css">
+        body{font-family:  "宋体","Microsoft Yahei","SimHei","Helvetica Neue";margin: 0;}
+        html,body{height: 100%;}
+        #top{width:40px; height:40px; bottom: 65px; right: 100px;display: block;  padding:20px; font:14px/20px arial; text-align:center;  background:blue; position:fixed; cursor:pointer; color:#fff;z-index: 2;}
+        .swiper-container,
+        .swiper-wrapper{height: 100%;width: 100%;}
+        .swiper-slide{height:100%;width: 100%;}
+        .header{background-color: #333;height: 25%;}
+        .content{background-color: #11293B;color: #fff;font-size: 30px;font-weight: 900;height: 25%;}
+        .article{position:relative;height:40px;left: 6%;top: 70%;}
+        .Bali-Kuta{background-image: url(../images/1.jpg);background-size:100% 100%; height: 50%;}
+        .Bedroom{background-image: url(../images/2.jpg);background-size:100% 100%; height: 50%;}
+        .row{position: absolute; height: 75%;background-color: #11293B;width: 100%;}
+        .room_out{position: relative;float: left;width: 48%;height: 100%;}
+        .room_in{position: relative;float: right;width: 48%;height: 100%;}
+        .describe{position:relative;color: #fff;display: inline-block;font-weight: 600;height: 40%;top: 10%;}
+        .room_picture{display: inline-block;width: 100%;height: 50%;}
+    </style>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div    id="a" class="swiper-slide " >
+            <div   class="header"></div>
+            <div    class="content"><span class="article">诚挚欢迎</span></div>
+            <div class="picture Bali-Kuta" ></div>
+        </div>
+        <div id="b" class="swiper-slide">
+            <div class="header"></div>
+            <div class="content"><span class="article">豪华套房</span></div>
+            <div class="picture Bedroom"></div>   
+        </div>
+        <div  id="c"  class="swiper-slide ">
+            <div class="header"></div>
+            <div class="row ">
+                <div class="room_out ">
+                    <div class="describe " >每间套房和套房都配有宽敞的阳台，俯瞰着库塔海滩与巴厘海峡。</div>
+                    <img src="../images/room_out.jpg"  class="img-responsive room_picture" height="100%" width="100%">
+                </div>
+                <div class="room_in "> 
+                    <div class="describe ">所有客房与套房都设计现代，配有喜来登Shine系列品牌用品。</div>
+                    <img src="../images/room_in.jpg" class="img-responsive room_picture"  height="100%" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   
+<a id="top"   href="#a" >返回顶部</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="../style/jquery-1.11.3/jquery.min.js"></script>
+    <script src="../style/bootstrap-3.3.5/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../style/swiper/swiper-3.3.1.jquery.min.js"></script>
+    <script>        
+        var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'vertical',
+        loop: false,
+        })        
+    </script>
+</body>
+</html>
